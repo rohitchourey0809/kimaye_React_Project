@@ -1,4 +1,3 @@
-
 import {
   Drawer,
   DrawerBody,
@@ -7,7 +6,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  
 } from '@chakra-ui/react';
 import {
   Box,
@@ -95,7 +93,7 @@ export default function WithSubnavigation() {
           </Button>
           <Button
             onClick={onOpen}
-            display={{ base: 'none', md: 'inline-flex' }}
+            display={{ base: 'none', lg: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
@@ -107,14 +105,14 @@ export default function WithSubnavigation() {
           >
             Sign Up
           </Button>
-          <Drawer isOpen={isOpen} onClose={onClose}>
+          <Drawer isOpen={isOpen} onClose={onClose} placement="right">
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerHeader>Create your account</DrawerHeader>
 
               <DrawerBody>
-            <SignupCard/>
+                <SignupCard />
               </DrawerBody>
 
               <DrawerFooter>
