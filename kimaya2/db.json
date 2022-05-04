@@ -1,0 +1,32 @@
+{
+  "userdata": [
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "firstname": "kamal",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "wrgwr",
+      "id": 3
+    },
+    {
+      "firstname": "jugnuu",
+      "lastname": "vhju",
+      "email": "sanfj@gmail.com",
+      "password": "12344546",
+      "id": 4
+    }
+  ]
+}
