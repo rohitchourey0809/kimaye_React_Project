@@ -1,32 +1,53 @@
 {
   "userdata": [
     {
-      "firstname": "ROHIT",
-      "lastname": "CHOUREY",
-      "email": "rohit_fw15_206@masai.school",
-      "password": "123",
+      "firtname": "rohit",
+      "lastname": "chourey",
+      "email": "rohit@12gmail.com",
+      "password": "12345",
       "id": 1
     },
     {
+      "firtname": "rohit",
+      "lastname": "chourey",
+      "email": "rohit@12gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "firtname": "rohit",
+      "lastname": "chourey",
+      "email": "rohit@12gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "firtname": "kamal",
+      "lastname": "chourey",
+      "email": "rohit@12gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "firtname": "kamkjgfjkwfkal",
+      "lastname": "chourey",
+      "email": "rohit@12gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "firstname": "bhgag",
+      "lastname": "chourey",
+      "email": "bhag@123",
+      "password": "123",
+      "id": 6
+    },
+    {
       "firstname": "ROHIT",
       "lastname": "CHOUREY",
       "email": "rohit_fw15_206@masai.school",
       "password": "123",
-      "id": 2
-    },
-    {
-      "firstname": "kamal",
-      "lastname": "CHOUREY",
-      "email": "rohit_fw15_206@masai.school",
-      "password": "wrgwr",
-      "id": 3
-    },
-    {
-      "firstname": "jugnuu",
-      "lastname": "vhju",
-      "email": "sanfj@gmail.com",
-      "password": "12344546",
-      "id": 4
+      "id": 7
     }
   ]
 }

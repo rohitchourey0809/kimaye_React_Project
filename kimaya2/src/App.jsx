@@ -13,22 +13,23 @@
 // import { Logo } from './Logo';
 // import WithSubnavigation from './components/Navbar';
 import React from 'react'
-import { LoginCard } from './components/LoginCard';
-import { SignupCard } from "./components/SignupCard";
+// import { LoginCard } from './components/LoginCard';
+// import { SignupCard } from "./components/SignupCard";
+import { Signupform } from './components/Signupform';
 
 // import { Signup } from './components/Signup';
 
 function App() {
   return (
-    // <ChakraProvider theme={theme}>
-    <>
-    <button>rohit</button>
+   <>
+      <button>Welcome To Signupform Page</button>
       {/* <WithSubnavigation /> */}
       {/* <Signup /> */}
-      <SignupCard/>
-      <LoginCard/>
+      {/* <SignupCard/> */}
+      {/* <LoginCard/> */}
+      <Signupform/>
     </>
-    // </ChakraProvider>
+  
   );
 }
 
