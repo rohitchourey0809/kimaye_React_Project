@@ -1,0 +1,103 @@
+{
+  "userdata": [
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "firstname": "KAMAL",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "firstname": "RIYA",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "firstname": "RIYA",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "firstname": "PANKAJ",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "firstname": "sup",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "",
+      "id": 7
+    },
+    {
+      "firstname": "s,mgmsf,",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "",
+      "id": 8
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "id": 14
+    }
+  ],
+  "logindata": []
+}

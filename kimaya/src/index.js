@@ -1,10 +1,11 @@
-import { ColorModeScript } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import { extendTheme, ChakraProvider } from '@chakra-ui/react';
+
 
 const colors = {
   brand: {
@@ -17,10 +18,12 @@ const colors = {
 const theme = extendTheme({ colors });
 ReactDOM.render(
   <StrictMode>
-    
-    <ColorModeScript />
     <ChakraProvider theme={theme}>
-      <App />
+      <BrowserRouter>
+        <ColorModeScript />
+
+        <App />
+      </BrowserRouter>
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')

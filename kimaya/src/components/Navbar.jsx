@@ -1,7 +1,7 @@
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
+  // DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -30,9 +30,11 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
-import SignupCard from './SignupCard';
 
-export default function WithSubnavigation() {
+import { Signupform } from './Signupform';
+// import { Loginform } from './loginform';
+
+export const WithSubnavigation = () => {
   const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
 
   return (
@@ -83,6 +85,8 @@ export default function WithSubnavigation() {
           spacing={6}
         >
           <Button
+            // onClick={onOpen}
+            // display={{ base: 'none', lg: 'inline-flex' }}
             as={'a'}
             fontSize={'sm'}
             fontWeight={400}
@@ -91,6 +95,17 @@ export default function WithSubnavigation() {
           >
             Sign In
           </Button>
+          {/* <Drawer isOpen={isOpen} onClose={onClose} placement="right">
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton />
+              <DrawerHeader>Create your account</DrawerHeader>
+
+              <DrawerBody>
+                <Loginform />
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer> */}
           <Button
             onClick={onOpen}
             display={{ base: 'none', lg: 'inline-flex' }}
@@ -112,14 +127,14 @@ export default function WithSubnavigation() {
               <DrawerHeader>Create your account</DrawerHeader>
 
               <DrawerBody>
-                <SignupCard />
+                <Signupform />
               </DrawerBody>
-
+              {/* 
               <DrawerFooter>
                 <Button type="submit" form="my-form">
                   Save
                 </Button>
-              </DrawerFooter>
+              </DrawerFooter> */}
             </DrawerContent>
           </Drawer>
         </Stack>
@@ -130,7 +145,7 @@ export default function WithSubnavigation() {
       </Collapse>
     </Box>
   );
-}
+};
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');

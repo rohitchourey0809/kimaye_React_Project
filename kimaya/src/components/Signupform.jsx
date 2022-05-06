@@ -14,11 +14,12 @@ import {
   Heading,
   Text,
   useColorModeValue,
-  Link,
+  
+  
 } from '@chakra-ui/react';
 import { useState } from 'react';
 // import { unstable_HistoryRouter} from 'react-router-dom';
-import { useNavigate, useNavigationType } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 export const Signupform = () => {
@@ -27,15 +28,15 @@ export const Signupform = () => {
   const [lastname, setlastname] = useState('');
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
- 
-  const navigate = useNavigation();
- 
+
+  const navigate = useNavigate();
 
   //?Button onclick function
   //?catch all the variable declared
   async function Signup() {
     // console.log(firstname, lastname, email, password);
-    const item = { firstname, lastname, email, password };
+    try{
+      const item = { firstname, lastname, email, password };
     console.log('item', item);
 
     let result = await fetch('http://localhost:8080/userdata', {
@@ -48,10 +49,21 @@ export const Signupform = () => {
 
     result = await result.json();
     console.log('result', result);
-
+   alert(
+     `congratulation  ${result.firstname} Signup "successfull" "Hurray" `
+   );
     //?localstore
     localStorage.setItem('user-info', JSON.stringify(result));
-    history.push('/add');
+
+    setTimeout(function () {
+      navigate("/loginform")
+    }, 1000);
+  }
+    
+  catch (err) {
+      console.log(err);
+      // alert(err);
+    }
   }
 
   return (
@@ -135,22 +147,27 @@ export const Signupform = () => {
               </InputGroup>
             </FormControl>
             <Stack spacing={10} pt={2}>
-              <Button
-                onClick={Signup}
-                loadingText="Submitting"
-                size="lg"
-                bg={'blue.400'}
-                color={'white'}
-                _hover={{
-                  bg: 'blue.500',
-                }}
-              >
-                Sign up
-              </Button>
+          
+                <Button
+                  onClick={Signup}
+                  loadingText="Submitting"
+                  size="lg"
+                  bg={'blue.400'}
+                  color={'white'}
+                  _hover={{
+                    bg: 'blue.500',
+                  }}
+                >
+                  Sign up
+                </Button>
+              
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>
-                Already a user? <Link color={'blue.400'}>Login</Link>
+                Already a user?{' '}
+                <Link to="/loginform" >
+                  Login
+                </Link>
               </Text>
             </Stack>
           </Stack>
