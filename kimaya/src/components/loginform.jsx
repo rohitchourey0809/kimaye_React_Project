@@ -7,14 +7,13 @@ import {
   Input,
   Checkbox,
   Stack,
- 
   Button,
   Heading,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-// import { useHistory } from 'react-router-dom';
+
 import { Link, useNavigate } from 'react-router-dom';
 
 export const Loginform = () => {
@@ -26,9 +25,13 @@ export const Loginform = () => {
   useEffect(() => {
     if (localStorage.getItem('user-info')) {
       //   history.push('/add');
-      navigate('/');
+      // login();
+      navigate('/loginform');
     }
-  }, [navigate]);
+    
+
+  
+  },[navigate]);
 
   const login = async () => {
     try {
@@ -37,11 +40,12 @@ export const Loginform = () => {
       console.log(item);
       let result = await fetch(' http://localhost:8080/logindata', {
         method: 'POST',
-        body: JSON.stringify(item),
+
         headers: {
           'content-type': 'application/json',
           Accept: 'application/json',
         },
+        body: JSON.stringify(item),
       });
       console.log('result', result.status);
       if (result.status == 400) {
@@ -49,7 +53,8 @@ export const Loginform = () => {
       } else {
         result = await result.json();
         localStorage.setItem('user-info', JSON.stringify(result));
-        navigate('/');
+        alert('login succesful');
+        navigate('/add');
       }
     } catch (err) {
       console.log(err);
@@ -67,7 +72,7 @@ export const Loginform = () => {
         <Stack align={'center'}>
           <Heading fontSize={'4xl'}>Sign in to your account</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
+            to enjoy all of our cool <p>features</p> ✌️
           </Text>
         </Stack>
         <Box
@@ -100,9 +105,9 @@ export const Loginform = () => {
                 justify={'space-between'}
               >
                 <Checkbox>Remember me</Checkbox>
-                <Link to = "signupform">Forgot password?</Link>
+                <Link to="/signupform">Forgot password?</Link>
               </Stack>
-              <Link to="loginform">
+              <Link to="/loginform">
                 {' '}
                 <Button
                   onClick={login}

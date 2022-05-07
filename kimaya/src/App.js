@@ -11,30 +11,31 @@
 // } from '@chakra-ui/react';
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
 // import { Logo } from './Logo';
-// import { WithSubnavigation } from './components/Navbar';
+import { WithSubnavigation } from './components/Navbar';
 import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 // import { Signup } from './components/Signup';
-// import { Signupform } from './components/Signupform';
-import { Loginform } from './components/loginform';
+import {ADD} from './components/add.jsx'
+import { Signupform } from './components/Signupform';
+import { Loginform } from './components/Loginform';
 
 function App() {
   return (
     <>
       <button>Welcome To Signupform Page</button>
-      {/* <WithSubnavigation /> */}
-      <Loginform />
-      {/* <Routes> */}
-        {/* <Route path="/signupform" component={<Signupform />} /> */}
+      <WithSubnavigation />
+      {/* <Loginform /> */}
+      {/* <Signupform /> */}
+      <Routes>
+        <Route path="/signupform" element={<Signupform />} />
 
-        {/* <Route path="/loginform" component={<Loginform />} />  */}
-       
-       
-      {/* </Routes> */}
+        <Route path="/loginform" element={<Loginform />} />
+        <Route path="/add" element={<ADD />} />
+      </Routes>
       {/* */}
       {/* <SignupCard/> */}
       {/* <LoginCard/> */}
-      {/* <Signupform/> */}
+
       {/* <Loginform/> */}
     </>
   );

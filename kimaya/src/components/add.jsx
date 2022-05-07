@@ -5,7 +5,7 @@
 import React from 'react'
 
 
-export const add = () => {
+export const ADD = () => {
   return (
     <div>add</div>
   )

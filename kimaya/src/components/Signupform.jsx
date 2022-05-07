@@ -19,8 +19,9 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 // import { unstable_HistoryRouter} from 'react-router-dom';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+// import {Navigate} from "react-router-dom"
 
 export const Signupform = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -28,8 +29,8 @@ export const Signupform = () => {
   const [lastname, setlastname] = useState('');
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
-
-  const navigate = useNavigate();
+  
+    const navigate = useNavigate();
 
   //?Button onclick function
   //?catch all the variable declared
@@ -54,10 +55,11 @@ export const Signupform = () => {
    );
     //?localstore
     localStorage.setItem('user-info', JSON.stringify(result));
-
-    setTimeout(function () {
-      navigate("/loginform")
-    }, 1000);
+   navigate('/loginform');
+    // return <Navigate to="/loginform" />
+    // setTimeout(function () {
+    //  navigate('/loginform');
+    // }, 1000);
   }
     
   catch (err) {
@@ -165,7 +167,7 @@ export const Signupform = () => {
             <Stack pt={6}>
               <Text align={'center'}>
                 Already a user?{' '}
-                <Link to="/loginform" >
+                <Link to ="/loginform"  >
                   Login
                 </Link>
               </Text>
