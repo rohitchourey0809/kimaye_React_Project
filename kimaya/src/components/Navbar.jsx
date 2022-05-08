@@ -32,6 +32,7 @@ import {
 } from '@chakra-ui/icons';
 
 import { Signupform } from './Signupform';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
 // import { Loginform } from './loginform';
 
 export const WithSubnavigation = () => {
@@ -84,6 +85,7 @@ export const WithSubnavigation = () => {
           direction={'row'}
           spacing={6}
         >
+          <Button><ColorModeSwitcher/></Button>
           <Button
             // onClick={onOpen}
             // display={{ base: 'none', lg: 'inline-flex' }}

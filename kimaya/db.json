@@ -342,6 +342,27 @@
       "email": "rohitchourey1122@gmail.com",
       "password": "123",
       "id": 49
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 50
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 51
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 52
     }
   ],
   "logindata": [
@@ -404,6 +425,16 @@
       "email": "rohitchourey1122@gmail.com",
       "password": "123",
       "id": 12
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 14
     }
   ]
 }
